@@ -14,7 +14,7 @@ namespace WishList.Controllers
 
         public ItemController(ApplicationDbContext dbContext)
         {
-            dbContext = _context;
+            _context = dbContext;
         }
 
         public IActionResult Index()
